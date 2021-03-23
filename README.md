@@ -28,7 +28,7 @@ import { Get } from '@kever/router'
 import { Response } from '@kever/response'
 
 @Controller('/')
-export class GroupController extends BaseController {
+export class Controller extends BaseController {
 
   @UsePlugin(PluginType.property, 'response')
   private response: Response
