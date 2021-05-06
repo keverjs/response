@@ -1,43 +1,43 @@
 dependencies:
-  '@kever/core': 0.9.0
-  '@kever/ioc': 0.9.0
+  '@kever/core': 0.10.4
+  '@kever/ioc': 0.10.4
 devDependencies:
   typescript: 4.2.4
 lockfileVersion: 5.2
 packages:
-  /@kever/core/0.9.0:
+  /@kever/core/0.10.4:
     dependencies:
-      '@kever/ioc': 0.9.0
-      '@kever/logger': 0.9.0
-      '@kever/router': 0.9.0
+      '@kever/ioc': 0.10.4
+      '@kever/logger': 0.10.0
+      '@kever/router': 0.10.0
       '@types/koa': 2.13.1
       koa: 2.13.1
     dev: false
     resolution:
-      integrity: sha512-6UJP1ymSUzYJWLh7RIxIqFHDkM08k/NXW84Yw+pu38K08KyFxWsQtADffb+v+2V5HhLY391TcijgBX/Wx2M0Vw==
-  /@kever/ioc/0.9.0:
+      integrity: sha512-K9z7YqMQpYD/bwZ6HH4wWkya9F6L3VCuMTBLX0MpgXQQ0In3PNX/b0KGr9Aft2M0pXwcdZyylB5goV0yZtLwfg==
+  /@kever/ioc/0.10.4:
     dependencies:
-      '@kever/logger': 0.9.0
+      '@kever/logger': 0.10.0
       '@types/koa': 2.13.1
     dev: false
     resolution:
-      integrity: sha512-SPzQy0QQRCj4yszon4oMGPufxTi2DwXBl8LrFM2Ile2cEnOveJ7bsHph2+2bi+cd+Ia9o2ROr3jE0WbEeGYN+w==
-  /@kever/logger/0.9.0:
+      integrity: sha512-iNweTEj0eBgpJI7p/NZC14ny53XcQ9EQUU5Gk8oU8pbElZmlOSbccMtPdaWcmW43gx/+FCOeDV/4e+rEFP3u8A==
+  /@kever/logger/0.10.0:
     dependencies:
       chalk: 4.1.1
     dev: false
     resolution:
-      integrity: sha512-21XSzyTXzufI8SMmSMLqgSdrWSU/bWEr4bD+PX9HAikwNUVTvhl6eeqW4BG34STXjMcOEiI60GXS3FkVTbCF5Q==
-  /@kever/router/0.9.0:
+      integrity: sha512-HzxsvdgXz62OHBwduPmQdFjy6ug6O46hPiYREkp2OVWLJF9e7Va92rInLkaEMuh/StO2yQfzvaGZr4GXNs7t6w==
+  /@kever/router/0.10.0:
     dependencies:
-      '@kever/logger': 0.9.0
+      '@kever/logger': 0.10.0
       '@types/koa': 2.13.1
       '@types/koa-router': 7.4.2
       koa: 2.13.1
       koa-router: 9.4.0
     dev: false
     resolution:
-      integrity: sha512-KjY7bqZZ5C/CxmElPPNebbrkz85LCbu1UL0sR39W5bpbE4avJ/FlNaw9IEGlAycD4OBBVyKmzyJgjMxV4gyVvQ==
+      integrity: sha512-clLax4bzKepK+aLaO/VfdWoTMQOZVjQc9pVZqTxSTpGRR0XpHMIZUpaiHleqUPYXaqQZrmuoOWkLDRuUbG7uCg==
   /@types/accepts/1.3.5:
     dependencies:
       '@types/node': 14.14.41
@@ -538,6 +538,6 @@ packages:
     resolution:
       integrity: sha512-faQrqNMzcPCHGVC2aaOINk13K+aaBDUPjGWl0teOXywElLjyVAB6Oe2jj62jHYtwsU49jXhScYbvPENK+6zAvQ==
 specifiers:
-  '@kever/core': ^0.9.0
-  '@kever/ioc': ^0.9.0
+  '@kever/core': ^0.10.4
+  '@kever/ioc': ^0.10.4
   typescript: ^4.2.3
