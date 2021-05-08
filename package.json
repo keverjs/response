@@ -22,7 +22,7 @@
     "typescript": "^4.2.3"
   },
   "dependencies": {
-    "@kever/core": "^0.10.4",
-    "@kever/ioc": "^0.10.4"
+    "@kever/core": "^0.12.0",
+    "@kever/ioc": "^0.12.0"
   }
 }
