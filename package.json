@@ -1,6 +1,6 @@
 {
   "name": "@kever/response",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "standard response output format.",
   "main": "./lib/index.js",
   "typings": "./lib/index.d.ts",
