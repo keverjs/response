@@ -15,7 +15,7 @@ export type Response = <T>(ctx: Context, errno: number, data: T) => {
   traceid?: string;
 };
 
-@Plugin('response', PluginType.property)
+@Plugin('response', PluginType.Property)
 export class ResponsePlugin implements BasePlugin {
   private errMsg = ERR_MSG
   constructor(errMsg: MsgType) {
