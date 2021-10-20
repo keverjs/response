@@ -1,24 +1,24 @@
 import { Context } from '@kever/core'
 import { BasePlugin, PluginType, Plugin } from '@kever/ioc'
 
-type MsgType = {[key: number]: string}
+type MessageType = {[key: number]: string}
 
-const ERR_MSG: MsgType = {
+const ERR_MESSAGE: MessageType = {
   10000: '成功',
   10001: '失败'
 }
 
 export type Response = <T>(ctx: Context, errno: number, data: T) => {
-  errno: keyof typeof ERR_MSG;
+  errno: keyof typeof ERR_MESSAGE;
   errmsg: string;
   data: T;
   traceid?: string;
 };
 
 @Plugin('response', PluginType.Property)
-export class ResponsePlugin implements BasePlugin {
-  private errMsg = ERR_MSG
-  constructor(errMsg: MsgType) {
+export class ResponsePlugin implements BasePlugin<PluginType.Property> {
+  private errMsg = ERR_MESSAGE
+  constructor(errMsg: MessageType) {
     this.errMsg = errMsg
   }
 
