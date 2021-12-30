@@ -1,5 +1,5 @@
 import { Context } from '@kever/core'
-import { BaseMiddleware, Type, Middleware } from '@kever/ioc'
+import { BaseMiddleware, MType, Middleware } from '@kever/ioc'
 
 type MessageType = {[key: number]: string}
 
@@ -15,8 +15,8 @@ export type Response = <T>(ctx: Context, errno: number, data: T) => {
   traceid?: string;
 };
 
-@Middleware('response', Type.Property)
-export class ResponseMiddleware implements BaseMiddleware<Type.Property> {
+@Middleware('response', MType.Property)
+export class ResponseMiddleware implements BaseMiddleware<MType.Property> {
   private errMsg = ERR_MESSAGE
   constructor(errMsg: MessageType) {
     this.errMsg = errMsg
