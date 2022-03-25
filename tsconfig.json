@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "outDir": "dist",
+    "sourceMap": false,
+    "target": "ES2016",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "allowJs": false,
+    "strict": true,
+    "noUnusedLocals": true,
+    "experimentalDecorators": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "removeComments": true,
+    "jsx": "preserve",
+    "lib": ["esnext", "dom"],
+    "types": ["node", "jest"],
+    "rootDir": ".",
+    "declaration": true,
+  },
+  "typedocOptions": {
+    "entryPoints": [ "./src/index.ts" ],
+    "out": "docs",
+    "theme": "category"
+  },
+  "include": ["src"],
+  "exclude": ["dist"]
+}
