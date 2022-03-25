@@ -1,2 +1,2 @@
-# single-repo-starter
+# [name]
 Single project repository starter template
