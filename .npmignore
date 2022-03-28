@@ -1,0 +1,16 @@
+.github/
+__tests__/
+src/
+node_modules/
+internal/
+scripts/
+temp/
+.npmignore
+api-extractor.json
+jest.config.ts
+tsconfig.json
+pnpm-lock.yaml
+global.d.ts
+.eslintrc
+.eslintignore
+
