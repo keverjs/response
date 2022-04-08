@@ -18,16 +18,14 @@
     "url": "https://github.com/keverjs/response/issues"
   },
   "homepage": "https://github.com/keverjs/response#readme",
-  "dependencies": {
-    "@kever/core": "*",
-    "@kever/ioc": "*"
-  },
   "devDependencies": {
+    "reflect-metadata": "^0.1.13",
     "typescript": "^4.2.3"
   },
   "peerDependencies": {
-    "typescript": ">=4.2.3",
-    "@kever/core": ">=0.24.0",
-    "@kever/ioc": ">=0.24.0"
+    "typescript": ">=4.2.3"
+  },
+  "dependencies": {
+    "kever": "^0.25.3"
   }
 }

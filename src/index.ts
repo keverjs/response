@@ -1,5 +1,4 @@
-import { Context } from '@kever/core'
-import { BaseMiddleware, MType, Middleware } from '@kever/ioc'
+import { Context, BaseMiddleware, MType, Middleware } from 'kever'
 
 type MessageType = {[key: number]: string}
 
