@@ -24,6 +24,6 @@
     "out": "docs",
     "theme": "category"
   },
-  "include": ["src"],
-  "exclude": ["dist"]
+  "include": ["src", "__tests__"],
+  "exclude": ["dist"],
 }
