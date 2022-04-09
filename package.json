@@ -1,7 +1,7 @@
 {
-  "name": "repo-name",
-  "version": "0.0.1",
-  "description": "description",
+  "name": "@kever/response",
+  "version": "1.1.3",
+  "description": "standard response output format.",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
@@ -13,14 +13,14 @@
     }
   },
   "keywords": [
-    ""
+    "response"
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hubvue/single-repo-starter.git"
+    "url": "git+https://github.com/keverjs/response.git"
   },
   "bugs": {
-    "url": "https://github.com/hubvue/signle-repo-starter/issues"
+    "url": "https://github.com/keverjs/response/issues"
   },
   "scripts": {
     "build": "esmo ./scripts/build.ts",
@@ -56,9 +56,17 @@
     "tsup": "^5.12.1",
     "typedoc": "^0.22.13",
     "typedoc-theme-category": "^1.0.7",
-    "typescript": "^4.6.2"
+    "typescript": "^4.6.2",
+    "reflect-metadata": "^0.1.13"
   },
-  "homepage": "https://github.com/hubvue/single-repo-starter/tree/main#readme",
+  "peerDependencies": {
+    "typescript": ">=4.2.3",
+    "kever": ">=0.25.4"
+  },
+  "dependencies": {
+    "kever": "*"
+  },
+  "homepage": "https://github.com/keverjs/response#readme",
   "author": "hubvue",
   "license": "MIT"
 }
