@@ -7,18 +7,20 @@ const ERR_MESSAGE: MessageType = {
   10001: '失败'
 }
 
-export type Response = <T>(ctx: Context, errno: number, data: T) => {
+export type TResponse = <T>(ctx: Context, errno: number, data: T) => {
   errno: keyof typeof ERR_MESSAGE;
   errmsg: string;
   data: T;
   traceid?: string;
-};
+}
 
-@Middleware('response', MType.Property)
+export const MIDDLEWARE_TAG = Symbol.for('response')
+
+@Middleware(MIDDLEWARE_TAG, MType.Property)
 export class ResponseMiddleware implements BaseMiddleware<MType.Property> {
   private errMsg = ERR_MESSAGE
   constructor(errMsg: MessageType) {
-    this.errMsg = errMsg
+    this.errMsg = errMsg || ERR_MESSAGE
   }
 
   ready() {
@@ -26,7 +28,7 @@ export class ResponseMiddleware implements BaseMiddleware<MType.Property> {
   }
 
   body<T>(ctx: Context, errno: number, data: T) {
-    const response: ReturnType<Response> = {
+    const response: ReturnType<TResponse> = {
       errno,
       errmsg: this.errMsg[errno] || '',
       data
@@ -37,3 +39,5 @@ export class ResponseMiddleware implements BaseMiddleware<MType.Property> {
     return response
   }
 }
+
+export const Response = Middleware.use(MType.Property, MIDDLEWARE_TAG)

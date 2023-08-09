@@ -1,10 +1,10 @@
 import { Middleware, MType} from 'kever'
-import { Response } from '../src'
+import { TResponse } from '../src'
 
 describe('response', () => {
   class ResponseTest {
     @Middleware.use(MType.Property,'response')
-    public response: Response | undefined
+    public response: TResponse | undefined
     test() {
       console.log(this.response)
     }
