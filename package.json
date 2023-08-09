@@ -1,6 +1,6 @@
 {
   "name": "@kever/response",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "standard response output format.",
   "main": "./dist/index.cjs",
   "module": "./dist/index.mjs",
