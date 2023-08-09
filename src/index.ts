@@ -40,4 +40,4 @@ export class ResponseMiddleware implements BaseMiddleware<MType.Property> {
   }
 }
 
-export const Response = Middleware.use(MType.Property, MIDDLEWARE_TAG)
+export const Response = () => Middleware.use(MType.Property, MIDDLEWARE_TAG)
